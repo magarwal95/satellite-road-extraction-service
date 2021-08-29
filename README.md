@@ -2,7 +2,9 @@
 
 This repository contains models, pre-processing, post-processing scripts to extract road  surface from satellite imageries.
 
-Detail description of the project can be found in [Road_Extraction_from_Satellite_Imageries.docx](Road_Extraction_from_Satellite_Imageries.docx)
+**Detail description of the project can be found in [Road_Extraction_from_Satellite_Imageries.docx](Road_Extraction_from_Satellite_Imageries.docx)**
+
+![Segmentation Sample](assets/pic1.png)
 
 ## Requirements
 - Python 3.6 or above
@@ -48,15 +50,23 @@ To create tensorflow server:
 #### Tensorflow server with Docker:
 From root folder, run:
 
-```docker pull tensorflow/serving```
+```
+docker pull tensorflow/serving
+```
 
-```MODEL="$(pwd)/road_extraction_outputs"```
+```
+MODEL="$(pwd)/road_extraction_outputs"
+```
 
-```docker run -t --rm -p 8500:8500 -p 8501:8501 -v "$MODEL/road_segmentation:/models/road_segmentation" -e MODEL_NAME=road_segmentation tensorflow/serving &```
+```
+docker run -t --rm -p 8500:8500 -p 8501:8501 -v "$MODEL/road_segmentation:/models/road_segmentation" -e MODEL_NAME=road_segmentation tensorflow/serving &
+```
 
 Once server is up, model status can be checked using:
 
-```curl http://localhost:8501/v1/models/road_segmentation```
+```
+curl http://localhost:8501/v1/models/road_segmentation
+```
 
 
 
