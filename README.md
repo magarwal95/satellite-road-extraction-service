@@ -19,13 +19,17 @@ From root folder run:
 - All scripts for data cleaning and data preprocessing are inside preprocessing directory.
     - [preprocessing/data_cleaning.ipynb](preprocessing/data_cleaning.ipynb) contains data cleaning code
     - [preprocessing/preprocessing_script.ipynb](preprocessing/preprocessing_script.ipynb) contains data preprocessing code.
+
 - All scripts related to models are present in models directory.
     - [models/efficientUnet.ipynb](models/efficientUnet.ipynb) contains model training code for unet with efficientNetB4 Backbone.
+
 - All scripts for inference and model evaluations are present in inference_evaluation directory.
     - [inference_evaluation/efficientUnet_eval.ipynb](inference_evaluation/efficientUnet_eval.ipynb) contains inference, post-processing and evaluation code.
     - [inference_evaluation/tf_serving_client_util.ipynb](inference_evaluation/tf_serving_client_util.ipynb) contains code to make gRPC/Rest inference call to deployed tensorflow server instance, post-process the prediction and evaluate the prediction.
+
 - All scripts related to model deployment using tf-serving are present in deployment directory.
     - [deployment/tf_serving.ipynb](deployment/tf_serving.ipynb) contaiins code to build efficientUnet saved_model.pb file for tensorflow serving.
+
 - Directory cb contains, code for various callbacks used during training.
     
 **For more details refer, [Road_Extraction_from_Satellite_Imageries.docx](Road_Extraction_from_Satellite_Imageries.docx)**
