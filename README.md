@@ -15,6 +15,10 @@ From root folder run:
 - pip install -r requirements.txt
 
 
+## Getting Started
+To run trained model and predict road on images, follow instructions under [Deployment section](#deployment)
+
+
 ## File Structure
 - All scripts for data cleaning and data preprocessing are inside preprocessing directory.
     - [preprocessing/data_cleaning.ipynb](preprocessing/data_cleaning.ipynb) contains data cleaning code
