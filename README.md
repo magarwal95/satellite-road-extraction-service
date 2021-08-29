@@ -38,6 +38,7 @@ From root folder run:
 **tensorboard --logdir road_extraction_outputs/logs/train_data/**
 #### Test Results
 - [road_extraction_outputs/test_results](road_extraction_outputs/test_results) contains inference results on test dataset.
+- [road_extraction_outputs/test_results/test_vis.html](road_extraction_outputs/test_results/test_vis.html) has test results visualised in jupyter notebook (Takes some time to load).
 #### Tensorflow serving
 - [road_extraction_outputs/road_segmentation](road_extraction_outputs/road_segmentation) contains saved_model.pb file for tf serving deployment.
 
